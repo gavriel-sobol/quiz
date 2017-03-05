@@ -1,7 +1,9 @@
-(function($){
-    $('td').click(function(){
-        $(this).children('.visiblenone').toggleClass('visible');
-        $(this).children('i').toggleClass("rotate90");
-        return false;
+(function ($){
+    $('li').click(function(){
+        $(this).toggleClass('visiblenone');
+        $(this).parent().parent().parent().toggleClass('block-question--spryatant');
+        $("#my").toggleClass('block-content--spryatant');
     });
 })(jQuery);
+
+ 
