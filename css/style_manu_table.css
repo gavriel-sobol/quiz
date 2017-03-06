@@ -107,6 +107,7 @@ body{
     transition: all  2s;
     word-wrap:break-word;
     z-index: -1;}
+
 .block-content__pre{
     font-size: 28px;
    
