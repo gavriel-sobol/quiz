@@ -1,50 +1,57 @@
 <!DOCTYPE html>
  <head>
-    <title>QUIZ</title>
+    <title>Quiz</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="css/quiz_index.css" type="text/css">  
-
-   
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
  </head>
   <body>
-     
-    <slide-wrapper>
+    <div class="slide">
+        <aside class="slide__sidebar">
+            <div class="slide__logo">
+                <img src="http://hr-gelios.com/wp-content/uploads/2015/11/cream_pixels54-576x450.png" class="slide__logo-image" alt="Magen David" >
+                <h2 class="slide__logo-caption">Quiz</h2>
+            </div>
 
-         <aside>
-             <div class="slide-logo">
-                 <img src="http://hr-gelios.com/wp-content/uploads/2015/11/cream_pixels54-576x450.png" class="slide-logo__img" alt="Magen David" >
-                 <h2 class="slide-logo__h2">Quiz</h2>
-                 <h6 class="slide-logo__h6">email@1234</h6>
-             </div>   
-
-             <div class="slide-menu">
-                <ul class="slide-menu__ul">
-                  <li class="slide-menu__item"> <a href="#" class="slide-menu__button">slide 1 </a></li>
-                  <li class="slide-menu__item"> <a href="#" class="slide-menu__button">slide 2</a></li>
-                  <li class="slide-menu__item"> <a href="#" class="slide-menu__button">slide 3</a></li>
-                  <li class="slide-menu__item"> <a href="#" class="slide-menu__button">slide 4</a></li>
-                </ul>   
-             </div>              
-         </aside>
-
-         <main>
-
-             <div class="main-head">
-                  <div class="main-head__itemname">
-                        <h3>Kategories 3</h3>
-                  </div>
+            <div class="slide__nav-wrapper">
+                <ul class="nav">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Slide 1 </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Slide 2</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Slide 3</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Slide 4</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+         <main class="slide__content">
+             <div class="slide__item active">
+                <img class="slide__item-image" src="images/image-1.jpg">
              </div>
-
-             <div class="main-content">
-                      <img class = "main-content__img" src="https://wallpaperscraft.ru/image/anthro_lis_komiks_104761_1920x1080.jpg">
-             </div>  
-
-         </main>   
-
-    </slide-wrapper>
+             <div class="slide__item">
+                <img class="slide__item-image" src="images/image-2.jpg">
+             </div>
+             <div class="slide__item">
+                <img class="slide__item-image" src="images/image-3.jpg">
+             </div>
+             <div class="slide__item">
+                <img class="slide__item-image" src="images/image-4.jpg">
+             </div>
+             <div class="slide__item">
+                <img class="slide__item-image" src="images/image-5.jpg">
+             </div>
+         </main>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/script.js"></script>
  </body>
-</html> 
+</html>
