@@ -1,0 +1,131 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background: #2D2D2D;
+    height: 100%;
+}
+
+.slide {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+}
+
+.slide__sidebar {
+    width: 20%;
+    flex: 1 0 auto;
+    min-width: 240px;
+}
+
+.slide__content {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    width: 80%;
+    background: #D2D2D2;
+}
+
+.slide__logo {
+    min-height: 130px;
+    text-align: center;
+    background: #213137;
+    padding: 30px 0 15px 0;
+}
+
+.slide__logo-image {
+    width: 50px;
+    height: 50px;
+}
+
+.slide__logo-caption {
+    color: white;
+}
+
+.slide__nav-wrapper {
+    margin: 30px 0;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav__item {
+    margin: 0;
+    padding: 0;
+}
+
+.nav__link {
+    background: #2D2D2D;
+    color: #FFFFFF;
+    display: block;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    background: #777;
+    opacity: .8;
+    transition: background .3s, opacity .3s;
+}
+
+.slide__description-wrapper {
+    width: 100%;
+    padding: 0;
+    background: #4bb9d1;
+}
+
+.slide__description {
+    width: 100%;
+    padding: 30px 30px;
+    color: white;
+    color: #F6F6F6;
+}
+
+.slide__description-caption {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.slide__item {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    background: #F6F6F6;
+    color: #F6F6F6;
+    user-select: none;
+    opacity: 0;
+    transition: opacity 5s cubic-bezier(0.19, 1, 0.22, 1);
+    position: relative;
+    position: absolute;
+    visibility: hidden;
+}
+
+.slide__item.active {
+    opacity: 1;
+    position: relative;
+    visibility: visible;
+}
+
+.slide__item-image {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
